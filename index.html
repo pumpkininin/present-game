@@ -116,6 +116,18 @@
         <div class="present-back"></div>
       </div>
     </div>
+    <div class="present" onclick="revealPresent(this)">
+      <div class="present-box">
+        <div class="present-front"></div>
+        <div class="present-back"></div>
+      </div>
+    </div>
+    <div class="present" onclick="revealPresent(this)">
+      <div class="present-box">
+        <div class="present-front"></div>
+        <div class="present-back"></div>
+      </div>
+    </div>
   </div>
   <button class="reset-btn" onclick="resetGame()">Play Again</button>
 
@@ -123,7 +135,7 @@
     // Locations with image placeholders
     const locations = [
       { name: "Bún đậu", image: "https://img.tripi.vn/cdn-cgi/image/width=700,height=700/https://gcs.tripi.vn/public-tripi/tripi-feed/img/472187usN/danh-sach-24-quan-bun-dau-mam-tom-ngon-o-da-nang_26" },
-      { name: "Bún bò", image: "https://www.google.com/imgres?q=bun%20bo&imgurl=http%3A%2F%2Fhidafoods.vn%2Fwp-content%2Fuploads%2F2023%2F11%2Fcach-nau-bun-bo-da-nang-don-gian-tai-nha-an-la-ghien-4.jpg&imgrefurl=https%3A%2F%2Fhidafoods.vn%2Fnau-bun-bo-da-nang%2F&docid=mmbJQdIWCQuJOM&tbnid=_k--Hl3-Kts2dM&vet=12ahUKEwjrtf7i4vKLAxUCsFYBHcL_E6YQM3oECBkQAA..i&w=1048&h=565&hcb=2&ved=2ahUKEwjrtf7i4vKLAxUCsFYBHcL_E6YQM3oECBkQAA" },
+      { name: "Bún bò", image: "https://www.google.com/imgres?q=bun%20bo&imgurl=https%3A%2F%2Fdanangbest.com%2Fupload_content%2Fbun-bo-da-nang-1.webp&imgrefurl=https%3A%2F%2Fdanangbest.com%2Ftop-7-quan-bun-bo-da-nang-ngon-nhat-khien-ai-cung-them.html&docid=gsWf8oa2K-SxZM&tbnid=Uy3KgQJHXi3ExM&vet=12ahUKEwjdx-Tp4_KLAxUVr1YBHedrGHQQM3oFCIMBEAA..i&w=750&h=708&hcb=2&ved=2ahUKEwjdx-Tp4_KLAxUVr1YBHedrGHQQM3oFCIMBEAA" },
       { name: "Bún riêu", image: "https://www.google.com/imgres?q=bun%20rieu&imgurl=https%3A%2F%2Fstatic.vinwonders.com%2Fproduction%2Fbun-rieu-cua-da-nang-16_optimized.jpeg&imgrefurl=https%3A%2F%2Fvinwonders.com%2Fvi%2Fwonderpedia%2Fnews%2F13-quan-bun-rieu-cua-da-nang%2F&docid=qFVo2DP5OKbK0M&tbnid=CUnlu3uKsm8kFM&vet=12ahUKEwiM_JW-4_KLAxU7sVYBHeUyD18QM3oECBoQAA..i&w=2000&h=1609&hcb=2&ved=2ahUKEwiM_JW-4_KLAxU7sVYBHeUyD18QM3oECBoQAA" },
       { name: "Bún cá", image: "https://www.google.com/imgres?q=bun%20ca&imgurl=https%3A%2F%2Fcdn.tgdd.vn%2FFiles%2F2020%2F04%2F03%2F1246339%2Fcach-nau-bun-ca-ha-noi-thom-ngon-chuan-vi-khong-ta-13.jpg&imgrefurl=https%3A%2F%2Fwww.dienmayxanh.com%2Fvao-bep%2Fcach-nau-bun-ca-ha-noi-thom-ngon-chuan-vi-khong-tanh-01938&docid=4Z1APHoLvCNmiM&tbnid=Li9nlEFH5tfvKM&vet=12ahUKEwjt29PG4_KLAxWZ7DQHHXG_DOEQM3oECBwQAA..i&w=730&h=400&hcb=2&ved=2ahUKEwjt29PG4_KLAxWZ7DQHHXG_DOEQM3oECBwQAA" },
       { name: "Bún trộn", image: "https://www.google.com/imgres?q=bun%20tron&imgurl=https%3A%2F%2Fcdn.tgdd.vn%2F2021%2F10%2FCookDish%2Ftong-hop-13-cach-lam-bun-tron-ngon-don-gian-de-lam-cho-bua-avt-1200x676.jpg&imgrefurl=https%3A%2F%2Fwww.dienmayxanh.com%2Fvao-bep%2Ftong-hop-13-cach-lam-bun-tron-ngon-don-gian-de-lam-cho-bua-14552&docid=SSIXxuJCoKYdAM&tbnid=k7lXgvjZIPkdGM&vet=12ahUKEwi8kOrP4_KLAxW1lFYBHcbAFBAQM3oECB0QAA..i&w=1200&h=676&hcb=2&ved=2ahUKEwi8kOrP4_KLAxW1lFYBHcbAFBAQM3oECB0QAA" }
